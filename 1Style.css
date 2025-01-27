@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(140deg, #07265f, #426b87);
+    color: #fff;
+}
+
+/* Welcome Container */
+.welcome-container {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.081);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+.welcome-container h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+    transform: translateY(0);
+    animation: slideIn 1s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: slideIn;
+    color : linear-gradient(140deg, #cc7613 , #6a45ff) !important; 
+
+    }
+
+    @keyframes simpleSlideLeft{
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
+    }
+    @keyframes slideIn {
+        0% { transform: translateY(0);  }
+        50% { transform: translateY(-10px) ; }
+        100% { transform: translateY(0)  ;}
+    }
+
+.welcome-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    animation:simpleSlideLeft 1s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Role Buttons */
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.role-btn {
+    background-color: #fff;
+    color: #313a62;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.role-btn:hover {
+    transform: scale(1.1);
+    background-color: #6848c4;
+    color: #fff;
+}
+
+.user-btn {
+    background-color: #0d3b90;
+    color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.user-btn:hover {
+    background-color: #23338f;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.driver-btn {
+    background-color: #0598f4;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.driver-btn:hover {
+    background-color: #4691c2;
+    color: #fff;
+}

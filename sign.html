@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langue des Signes - EasyGo</title>
+    <link rel="stylesheet" href="sign-language.css">
+</head>
+<body>
+    
+    <main class="main-container">
+        <h1>Interface de Communication en Langue des Signes</h1>
+        <p>Utilisez votre caméra pour communiquer via des gestes de la langue des signes.</p>
+
+        <section class="video-section">
+            <!-- Video Stream -->
+            <div class="video-container">
+                <video id="video" autoplay playsinline></video>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions">
+                <h2>Comment ça marche :</h2>
+                <ul>
+                    <li>Activez votre caméra pour détecter vos gestes.</li>
+                    <li>Les gestes reconnus seront traduits en texte ci-dessous.</li>
+                    <li>Support des gestes simples : "Pouce levé", "OK", et "Salut".</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Output Section -->
+        <div id="output" class="output-section">
+            <h2>Reconnaissance en temps réel :</h2>
+            <p>Reconnaissance : <span id="recognizedText">...</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EasyGo - Tous droits réservés</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose/dist/handpose.min.js"></script>
+    <script src="enhanced-sign-language.js"></script>
+</body>
+</html>

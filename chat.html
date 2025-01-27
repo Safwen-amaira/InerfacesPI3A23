@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Inclusif - EasyGo</title>
+    <link rel="stylesheet" href="cc.css"> <!-- Fichier CSS externe -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery pour certaines animations -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+       
+        <div class="nav-links">
+            <a href="#">Search</a>
+            <a href="#">Points</a>
+            <a href="#">Réclamation</a>
+            <a href="t.html">Retour à l'accueil</a>
+        </div>
+        <div class="profile">
+            <img src="download.jpg" alt="Profile Image">
+        </div>
+    </nav>
+
+    <!-- Chat Section -->
+    <section class="chat-section">
+        <h2>Chat avec le Conducteur</h2>
+        <div class="chat-box">
+            <!-- Messages -->
+            <div class="chat-messages">
+                <div class="message user-message">
+                    <div class="avatar"><img src="download.jpg" alt="User Avatar"></div>
+                    <p>Bonjour, est-ce que ce trajet est adapté pour une personne en fauteuil roulant ?</p>
+                </div>
+                <div class="message driver-message">
+                    <div class="avatar"><img src="download.jpg" alt="Driver Avatar"></div>
+                    <p>Bonjour ! Oui, le véhicule est équipé pour cela.</p>
+                </div>
+            </div>
+            <!-- Message Input with Voice Recognition & Camera Integration -->
+            <div class="message-input">
+                <textarea id="messageInput" placeholder="Écrire un message..." rows="5"></textarea>
+                <button id="voiceInputBtn">🎤</button>
+                <button id="cameraInputBtn">📷 Caméra</button>
+                <button id="sendMessageBtn">Envoyer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Feed for Sign Language Recognition -->
+    <div id="signLangFeed" style="display: none;">
+        <video id="video" width="320" height="240" autoplay></video>
+        <p id="signText">Votre texte traduisible va apparaître ici</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.24/webcam.min.js"></script> <!-- WebcamJS for camera control -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> <!-- TensorFlow.js for sign language recognition -->
+    <script src="chat.js"></script> <!-- Fichier JavaScript pour intégrer la reconnaissance vocale et les signes -->
+</body>
+</html>

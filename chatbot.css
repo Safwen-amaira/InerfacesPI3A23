@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(140deg, #07265f, #426b87);
+
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.chatbot-container .AppName{
+    animation: slideIn; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    animation-play-state: running;
+
+}
+@keyframes slideIn {
+    0% { transform: translateY(0);  }
+    50% { transform: translateY(-5px) ; }
+    100% { transform: translateY(0)  ;}
+}
+.chatbot-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e3e3e3;
+}
+
+.chatbot-container p {
+    font-size: 16px;
+    color: #c3c3c3;
+    margin-bottom: 20px;
+}
+
+/* Chat Display */
+.chat-display {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.bot-message {
+    background-color: #7b5bf7;
+    color: white;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #ddd;
+    color: black;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Input Section */
+.chat-input-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chat-input-section input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.chat-input-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sendBtn {
+    background-color: #7b5bf7;
+    color: white;
+}
+
+#voiceBtn {
+    background-color: #85b0de;
+    color: white;
+}
+
+#sendBtn:hover {
+    background-color: #6848c4;
+}
+
+#voiceBtn:hover {
+    background-color: #dba600;
+}

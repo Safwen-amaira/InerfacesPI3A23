@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EasyGo</title>
+    <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+   
+
+    <main>
+        <div class="form-container">
+            <h1>Inscription</h1>
+            <p>Aidez-nous à personnaliser votre expérience en répondant à ce questionnaire.</p>
+
+            <form id="signupForm">
+                <!-- Informations personnelles -->
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Numero de téléphone</label>
+                    <input type="text" id="password" name="password" placeholder="Entrez votre numero de téléphone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Entrez un mot de passe sécurisé" required>
+                </div>
+
+                <!-- Questionnaire sur le handicap -->
+                <div class="form-group">
+                    <label for="disabilityType">Type de handicap</label>
+                    <select id="disabilityType" name="disabilityType" required>
+                        <option value="" disabled selected>Choisissez une option</option>
+                        <option value="moteur">Handicap moteur</option>
+                        <option value="auditif">Handicap auditif</option>
+                        <option value="visuel">Handicap visuel</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="functionalities">Quelles fonctionnalités recherchez-vous ?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="functionalities" value="rampe"> Véhicules avec rampes d'accès</label>
+                        <label><input type="checkbox" name="functionalities" value="audio"> Assistance audio</label>
+                        <label><input type="checkbox" name="functionalities" value="video"> Assistance vidéo</label>
+                        <label><input type="checkbox" name="functionalities" value="communication"> Chat avec reconnaissance vocale</label>
+                        <label><input type="checkbox" name="functionalities" value="autre"> Autre</label>
+                    </div>
+                </div>
+
+                <!-- Bouton d'envoi -->
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Votre inscription a été prise en compte ! Merci de nous faire confiance.');
+        });
+    </script>
+</body>
+</html>

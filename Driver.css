@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(140deg, #07265f, #426b87);
+
+}
+
+/* Page Container */
+.page-container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    background: linear-gradient(135deg, #063058, #4b3cc6);
+    color: rgb(21, 26, 110);
+    border-right: solid 2px #07265f ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    background-image: url('./covoiturageinscriptiondrivers.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.right-section h2 {
+ 
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: slideIn ;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    animation-play-state: running;
+    text-align: center;
+}
+
+.right-section p {
+    font-size: 16px;
+    text-align: center;
+    color: #b0b0b0;
+
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff31;
+    justify-content: flex-start;
+    height: 100%; /* Full height for right section */
+    overflow-y: auto; /* Make the right section scrollable */
+    padding-bottom: 80px; /* Space for the submit button */
+}
+.right-section p:last-child{
+    color: #b0b0b0;
+}
+.AppName{
+    color: #3477a3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px !important;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    text-decoration-thickness: 2px;
+    
+
+}
+@keyframes slideIn {
+    0% { transform: translateY(0);  }
+    50% { transform: translateY(-5px) ; }
+    100% { transform: translateY(0)  ;}
+}
+/* Heading Styles */
+.right-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.right-section h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    color: #555;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #7b5bf7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add some margin-top to ensure space above the button */
+}
+
+.submit-btn:hover {
+    background-color: #5a3ec0;
+}

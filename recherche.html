@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Accessible</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <h2>Bienvenue sur le Chatbot  <span class="AppName"> EasyGo</span> </h2>
+        <p>Posez vos questions ou utilisez la commande vocale pour rechercher des offres adaptées à vos besoins.</p>
+
+        <!-- Chat Display -->
+        <div class="chat-display" id="chatDisplay">
+            <div class="chat-message bot-message">
+                Bonjour ! Comment puis-je vous aider aujourd’hui ?
+            </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="chat-input-section">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Écrivez votre message ici..." 
+                aria-label="Champ de texte pour écrire votre message"
+            >
+            <button id="sendBtn" aria-label="Envoyer un message">Envoyer</button>
+            <button id="voiceBtn" aria-label="Activer la commande vocale">🎤</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

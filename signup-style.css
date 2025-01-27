@@ -1,0 +1,110 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(140deg, #07265f, #426b87);
+
+        color: #fff;
+}
+
+header {
+    background-color: #4a6cf7;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(0);  }
+    50% { transform: translateY(-10px) ; }
+    100% { transform: translateY(0)  ;}
+}
+
+
+/* Formulaire */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #00000033;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #bdcdd2;
+    animation: slideIn ;
+    font-size: 24px;
+    font-weight: bold;
+    animation: slideIn ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+p {
+    text-align: center;
+    color: #b0b0b0;    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4a6cf7;
+    outline: none;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a6cf7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #3d5cd3;
+}
+
